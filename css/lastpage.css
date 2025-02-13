@@ -1,66 +1,35 @@
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   text-align: center;
-  color: white; /* Ensures text is visible */
-  font-family: Arial, sans-serif;
-  background: black; /* Adds black bars like in your reference image */
+  margin-top: 30px;
+  font-family: "Courier";
+  background-color: #fff5e4;
+  color: #ff9494;
 }
-
-/* Background Image */
-#background {
-  width: 100vw;
-  height: 100vh;
-  background: url('../Cinne.jpeg') no-repeat center center;
-  background-size: contain; /* Ensures the full image fits without cropping */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Responsive text box */
 #thankyou {
-  font-size: 2rem;
-  font-weight: bold;
-  background: rgba(0, 0, 0, 0.5); /* Adds slight overlay for readability */
-  padding: 10px 20px;
-  border-radius: 8px;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
-
-/* Button styling */
+.rizz {
+  margin-bottom: 10 px;
+}
 .button {
-  padding: 12px 25px;
+  padding: 10px 20px;
   font-size: 18px;
-  background-color: #ff4081;
-  color: white;
-  border: none;
-  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease-in-out;
-  margin-top: 15px;
+  margin: 10px;
+  font-family: "courier";
+  margin-bottom: 20px;
+  background-color: #ffe3e1;
+  color: #e67373;
+  border-radius: 12px;
+  border: 2px solid #ffe3e1;
+  box-shadow: 1px 1px 2px #ff9494;
+  transition: 0.3s;
 }
 
 .button:hover {
-  background-color: #e91e63;
-}
-
-/* Responsive Design Tweaks */
-@media (max-width: 768px) {
-  #background {
-    background-size: contain; /* Ensures full image is visible on mobile */
-  }
-
-  #thankyou {
-    font-size: 1.5rem;
-  }
+  background-color: #ff9494;
+  color: #ffe3e1;
+  border: 2px solid #ff9494;
+  box-shadow: 1px 1px 2px #ffe3e1;
 }

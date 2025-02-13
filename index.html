@@ -5,61 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Be My Valentine</title>
     <link rel="stylesheet" href="css/valentine.css" />
-    <style>
-      body {
-        font-family: "Arial", sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        background-color: #ffe4e1;
-      }
-
-      #valentineQuestion {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #d22b2b;
-      }
-
-      .answerButton {
-        padding: 10px 20px;
-        font-size: 1rem;
-        margin: 10px;
-        border: none;
-        border-radius: 8px;
-        background-color: #ff6f61;
-        color: white;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-
-      .answerButton:hover {
-        background-color: #e45b50;
-      }
-
-      img.responsive {
-        max-width: 100%;
-        height: auto;
-        margin-top: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
-
-      @media (max-width: 600px) {
-        #valentineQuestion {
-          font-size: 1.5rem;
-        }
-
-        .answerButton {
-          font-size: 0.9rem;
-          padding: 8px 16px;
-        }
-      }
-    </style>
   </head>
   <body>
     <div id="valentineQuestion"><b>Will you be my valentine?</b></div>
@@ -68,7 +13,7 @@
     </button>
     <button class="answerButton" id="noButton">Elvis No</button>
     <br />
-    <img src="Cinne.jpeg" alt="cat asking question" class="responsive" />
+    <img src="valentine.jpg" alt="cat asking question" class="responsive" />
 
     <script>
       document
@@ -80,7 +25,7 @@
           var currentFontSize = parseInt(
             window.getComputedStyle(yesButton).fontSize
           );
-          yesButton.style.fontSize = currentFontSize + 5 + "px"; // Increase font size by 5px
+          yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
         });
     </script>
   </body>

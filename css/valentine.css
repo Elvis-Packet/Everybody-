@@ -2,8 +2,8 @@ body {
   text-align: center;
   margin-top: 30px;
   font-family: "Courier";
-  background-color: #fff5e4;
-  color: #ff9494;
+  background-color: #d0f0fd; /* light blue background for birthday */
+  color: #1a73e8; /* bright blue text */
 }
 
 img {
@@ -16,6 +16,7 @@ img {
   font-size: 50px;
   margin-bottom: 10px;
 }
+
 .answerButton {
   padding: 10px 20px;
   font-size: 18px;
@@ -23,17 +24,17 @@ img {
   margin: 10px;
   font-family: "courier";
   margin-bottom: 20px;
-  background-color: #ffe3e1;
-  color: #e67373;
+  background-color: #a3d8f4; /* lighter blue */
+  color: #0b47a1; /* darker blue */
   border-radius: 12px;
-  border: 2px solid #ffe3e1;
-  box-shadow: 1px 1px 2px #ff9494;
+  border: 2px solid #a3d8f4;
+  box-shadow: 1px 1px 2px #1a73e8;
   transition: 0.3s;
 }
 
 .answerButton:hover {
-  background-color: #ff9494;
-  color: #ffe3e1;
-  border: 2px solid #ff9494;
-  box-shadow: 1px 1px 2px #ffe3e1;
+  background-color: #1a73e8;
+  color: #d0f0fd;
+  border: 2px solid #1a73e8;
+  box-shadow: 1px 1px 2px #d0f0fd;
 }

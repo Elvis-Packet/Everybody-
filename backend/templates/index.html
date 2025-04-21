@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/valentine.css') }}" />
+  </head>
+  <body>
+    <div id="valentineQuestion"><b>Will you celebrate with me?</b></div>
+    <button class="answerButton" onclick="location.href='{{ url_for('thankyou') }}'">
+      Yes, let's celebrate!
+    </button>
+    <button class="answerButton" id="noButton">Maybe later</button>
+    <br />
+    <img src="{{ url_for('static', filename='birthday.jpg') }}" alt="birthday celebration" class="responsive" />
+
+    <script>
+      const noButton = document.getElementById("noButton");
+      noButton.addEventListener("click", function () {
+        const yesButton = document.querySelector('button[onclick*="thankyou"]');
+        const currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+        yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 10px
+      });
+    </script>
+  </body>
+</html>

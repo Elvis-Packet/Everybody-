@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lastpage.css') }}" />
+  </head>
+  <body>
+    <div id="thankyou"><b>Thank you</b></div>
+
+    <img id="rizz" src="{{ url_for('static', filename='birthday-placeholder.jpg') }}" alt="birthday celebration" class="responsive" />
+    <br />
+    <audio controls autoplay loop>
+      <source src="{{ url_for('static', filename='birthday-song.mp3') }}" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <h1>Hope you have a wonderful birthday!</h1>
+    <button class="button" onclick="location.href='{{ url_for('date') }}'">
+      Plan another birthday
+    </button>
+  </body>
+</html>

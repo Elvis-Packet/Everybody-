@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/date.css') }}" />
+  </head>
+  <body>
+    <h1 title="choose a date">When is your birthday?</h1>
+    <form class="form-group" method="POST" action="/date">
+      <label>Choose your birthday date:</label>
+      <div>
+        <input type="date" name="birthday" required />
+        <button class="button" type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
